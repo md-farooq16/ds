@@ -927,15 +927,16 @@ margin=dict(1=0, r=0, b=0, t=40),
 title='3D Surface Plot of sin(sqrt(x^2 + y^2))')
 OR
 PROGRAM 2:
+
+
 import plotly.express as px
-df = px.data.gapminder().query("continent=='Asia")
-fig = px.line_3d(df, x="gdpPercap", y="pop"
-, z="
-year",
-color='country'
-, title='Economic Evolution of
-Asian Countries Over Time')
+
+df = px.data.gapminder().query("continent=='Asia'")
+fig = px.line_3d(df, x="gdpPercap", y="pop", z="year", color='country', title='Economic Evolution of Asian Countries Over Time')
 fig.show()
+
+
+
 EXPLANATION OF PROGRAM 1: Program1 generates a 3D
 surface plot of the function z =
 sin(sqrt(x2+y2)). We can modify the function or provide our own data to
